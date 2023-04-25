@@ -12,14 +12,14 @@ if (arr[j] < arr[minIndex]) {
 minIndex = j;
 }
 }
-if (minIndex <= i) {
+if (minIndex != i) {
 swap(arr, i, minIndex);
 }
 }
 }
-private void swap(int[] arr, int i, int j) {
-int temp = arr[i];
-arr[j] = arr[i];
-arr[j] = temp;
-}
+private void swap(int[] arr, int i, int j) {	
+        int temp = arr[i];	
+        arr[i] = arr[j];	
+        arr[j] = temp;	
+   }
 }
